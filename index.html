@@ -107,7 +107,7 @@
 				class="elementor-element elementor-element-49f520f e-con-full e-flex e-con e-parent elementor-sticky elementor-sticky--effects e-lazyloaded elementor-sticky--active elementor-section--handles-inside"
 				data-id="49f520f" data-element_type="container"
 				data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0,&quot;sticky_anchor_link_offset&quot;:0}"
-				style="position: fixed; width: 100%; margin-top: 0px; margin-bottom: 0px; top: 0px;">
+				style="position: fixed; width: 100%; margin-top: 0px; margin-bottom: 0px; top: 0px; z-index: 99999;">
 				<div
 					class="elementor-element elementor-element-2af6157 e-con-full elementor-hidden-mobile e-flex e-con e-child"
 					data-id="2af6157" data-element_type="container">
@@ -383,7 +383,7 @@
 			.text-container-2 {
 				flex: 1;
 				margin: auto;
-				padding: 50px;
+				/* padding: 50px; */
 			}
 
 			.text-container-2 h2 {
@@ -626,7 +626,7 @@
 							data-id="e8b3f07" data-element_type="widget"
 							data-widget_type="text-editor.default">
 							<div class="elementor-widget-container">
-								<p class="p1"><b>Our claims team are based across the UK, ensuring
+								<p class="p1" style="font-family: Fraunces;"><b>Our claims team are based across the UK, ensuring
 										wherever you are – you get the help you need, exactly when you need
 										it.</b></p>
 							</div>
@@ -1204,7 +1204,7 @@
 						data-id="7b42602" data-element_type="widget"
 						data-widget_type="text-editor.default">
 						<div class="elementor-widget-container">
-							<p class="p1"><b>Part of:</b> 30 Melville Street Edinburgh EH3 7HA</p>
+							<p class="p1 mb-1" style="font-size: 14px;"><b>Part of:</b> 30 Melville Street Edinburgh EH3 7HA</p>
 						</div>
 					</div>
 
@@ -1213,7 +1213,7 @@
 						data-id="ac374c2" data-element_type="widget"
 						data-widget_type="text-editor.default">
 						<div class="elementor-widget-container">
-							<p class="p1">
+							<p class="p1 mb-0" style="font-size: 14px;">
 								&copy; 2025 Elevate Claims. All rights reserved.
 							</p>
 						</div>
@@ -1285,8 +1285,8 @@
 			$('.autoplay').slick({
 				slidesToShow: 3,
 				slidesToScroll: 1,
-				autoplay: false,
-				autoplaySpeed: 2000,
+				autoplay: true,
+				autoplaySpeed: 1000,
 				dots: true,
 				responsive: [
 					{
@@ -1309,9 +1309,10 @@
 			$('.autoplayOne').slick({
 				slidesToShow: 3,
 				slidesToScroll: 1,
-				autoplay: false,
-				autoplaySpeed: 2000,
+				autoplay: true,
+				autoplaySpeed: 1000,
 				center: true,
+				dots: true,
 				responsive: [
 					{
 						breakpoint: 1200,
